@@ -44,34 +44,39 @@ vehicle_human_counter/
 └── README.md
 Kurulum
 
-Gerekli kütüphaneleri yüklemek için:
+1-Gerekli kütüphaneleri yüklemek için:
 
 pip install -r requirements.txt
-Projeyi Çalıştırma
+
+2-Projeyi Çalıştırma
 python main.py
-Sistem Çalışma Mantığı
+
+3-Sistem Çalışma Mantığı
 Kullanıcı video seçer
 YOLOv8 nesneleri tespit eder
 ByteTrack nesnelere ID atar
 ROI alanına giren nesneler kontrol edilir
 Aynı ID yalnızca bir kez sayılır
 Sonuç ekranda gösterilir
-Algılama Modları
+
+4-Algılama Modları
 İnsan
 Araç
 Tümü
-Performans
-CPU dostu yapı
-Düşük çözünürlük optimizasyonu
-Gerçek zamanlı işleme
-Ortalama 10-15 FPS performansı
-Gelecekte Yapılabilecek Geliştirmeler
-Mouse ile ROI seçme
-GPU desteği
-Web kamera desteği
-Veri analizi paneli
-Çoklu kamera desteği
-Raporlama sistemi
-Geliştirici
 
+Performans
+-CPU dostu yapı
+-Düşük çözünürlük optimizasyonu
+-Gerçek zamanlı işleme
+-Ortalama 10-15 FPS performansı
+
+Gelecekte Yapılabilecek Geliştirmeler
+-Mouse ile ROI seçme
+-GPU desteği
+-Web kamera desteği
+-Veri analizi paneli
+-Çoklu kamera desteği
+-Raporlama sistemi
+
+Geliştirici:
 Muharrem Tarayan

@@ -1,0 +1,13 @@
+import supervision as sv
+
+
+class ObjectTracker:
+    def __init__(self):
+        self.tracker = sv.ByteTrack()
+
+    def update(self, detections):
+        tracked_objects = self.tracker.update_with_detections(
+            detections
+        )
+
+        return tracked_objects

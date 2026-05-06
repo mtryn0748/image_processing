@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Conda / venv
+env/
+venv/
+.venv/
+
+# VSCode
+.vscode/
+
+# Model files
+*.pt
+
+# Videos
+videos/input/*
+videos/output/*
+
+# System files
+.DS_Store
+Thumbs.db

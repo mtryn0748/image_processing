@@ -14,7 +14,12 @@ class ObjectDetector:
         ]
 
     def detect(self, frame, mode="all"):
-        results = self.model(frame, verbose=False, conf = 0.4)[0] # %40 altındaki doğruuk oranlarını alma 
+#frame modele gönderir nesneleri bulur ve 
+        results = self.model(
+            frame,
+            verbose=False, 
+            conf = 0.4
+            )[0] # %40 altındaki doğruuk oranlarını alma 
 
         detections = sv.Detections.from_ultralytics(results)
 

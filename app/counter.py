@@ -5,7 +5,7 @@ class ObjectCounter:
         self.total_count = 0
 
         self.roi = None
-
+# sayım yapar
     def set_roi(self, frame_width, frame_height):
 
         x1 = int(frame_width * 0.3)
@@ -18,14 +18,14 @@ class ObjectCounter:
 
     def is_inside_roi(self, x, y):
         x1, y1, x2, y2 = self.roi
-
+#roi kontrolu burada yapılır 
         return (
             x1 <= x <= x2
             and y1 <= y <= y2
         )
 
     def count(self, track_id, center_x, center_y):
-
+#daha önce sayıldı mı? diye sorar eğer saydıysa saymaz
         if track_id in self.counted_ids:
             return
 

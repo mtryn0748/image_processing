@@ -4,7 +4,7 @@ from app.detector import ObjectDetector
 from app.tracker import ObjectTracker
 from app.counter import ObjectCounter
 
-
+#sistem burada birleştirir her şeyi 
 class VideoProcessor:
     def __init__(self, video_path, mode="all"):
         self.video_path = video_path
@@ -17,6 +17,7 @@ class VideoProcessor:
         self.counter = ObjectCounter()
 
     def process(self):
+#video okumayı burada yapar ilgili pathten gelen videoyu alır değişkene atar 
         cap = cv2.VideoCapture(self.video_path)
 
         if not cap.isOpened():
@@ -25,6 +26,7 @@ class VideoProcessor:
         frame_count = 0
         prev_time=0
         while True:
+            #frame alır
             ret, frame = cap.read()
             frame_count +=1
 
@@ -33,7 +35,7 @@ class VideoProcessor:
 
             if not ret:
                 break
-
+#cpu yükünü azaltmak için resize yapar fps artar
             frame = cv2.resize(frame, (640, 480))
             if self.counter.roi is None:
                 self.counter.set_roi(

@@ -72,7 +72,7 @@ class VideoProcessor:
                     int,
                     tracked_objects.xyxy[i]
                 )
-
+#nesnslerin merkezini hesaplar
                 center_x = int((x1 + x2) / 2)
                 center_y = int((y1 + y2) / 2)
 
@@ -138,7 +138,7 @@ class VideoProcessor:
                 thickness=3
             )
             cv2.imshow(
-                "Vehicle & Human Counter",
+                "Araç & İnsan Sayma",
                 frame
             )
 

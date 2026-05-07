@@ -25,15 +25,15 @@ class ObjectDetector:
         for i, class_id in enumerate(detections.class_id):
             class_name = self.model.names[class_id]
 
-            if mode == "human":
+            if mode == "İnsan":
                 if class_name != "person":
                     continue
 
-            elif mode == "vehicle":
+            elif mode == "Araç":
                 if class_name not in self.vehicle_classes:
                     continue
 
-            elif mode == "all":
+            elif mode == "Tümü":
                 if (
                     class_name != "person"
                     and class_name not in self.vehicle_classes

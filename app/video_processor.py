@@ -55,7 +55,7 @@ class VideoProcessor:
             x1_roi, y1_roi, x2_roi, y2_roi = (
                 self.counter.roi
             )
-
+#cv2 kutuya alır
             cv2.rectangle(
                 frame,
                 (x1_roi, y1_roi),
